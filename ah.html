@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Amin Hossain - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="ah_styles.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <header id="header">
+        <div class="container">
+            <h1>Al-Amin Hossain</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#gallery" class="nav-link">Photography</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>            
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="container">
+            <div class="intro" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="title">Welcome to My Portfolio</h1>
+                <div class="typewriter">
+                    <h2>I'm <span class="highlight">Al-Amin Hossain</span></h2>
+                </div>
+                <p>A passionate Software Engineer based in Dhaka, Bangladesh.</p>
+                <div class="cta-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>I specialize in creating modern, responsive websites with a focus on user experience. With over 0 years of experience, I have worked on various projects ranging from personal blogs to complex e-commerce platforms.</p>
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <div class="skill-bars">
+                            <div class="skill">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-photo" data-aos="fade-left">
+                    <div class="photo-frame">
+                        <img src="img/photo_02.jpg" alt="Al-Amin" class="profile-photo">
+                        <div class="photo-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Services</h2>
+            <p class="section-subtitle" data-aos="fade-up">What I can do for you</p>
+            <div class="services-grid">
+                <div class="service" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>I develop responsive websites using the latest technologies and frameworks.</p>
+                    <a href="#contact" class="service-link">Get this service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Apps</h3>
+                    <p>I create mobile applications that are intuitive and user-friendly.</p>
+                    <a href="#contact" class="service-link">Get this service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>I design interfaces that are visually appealing and easy to use.</p>
+                    <a href="#contact" class="service-link">Get this service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Portfolio</h2>
+            <p class="section-subtitle" data-aos="fade-up">My recent projects</p>
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/car.jpeg" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Automated Car Parking System</h3>
+                        <p>The automated car parking system aims to streamline parking management using microprocessor and microcontroller technology.</p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/al-amin057/micro_project?tab=readme-ov-file" class="btn btn-small" target="_blank"><i class="fas fa-link"></i> View</a>
+                            <a href="#" class="btn btn-small"><i class="fas fa-search"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/car.jpeg" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Mobile App Project</h3>
+                        <p>Description of Project 2.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn btn-small" target="_blank"><i class="fas fa-link"></i> View</a>
+                            <a href="#" class="btn btn-small"><i class="fas fa-search"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="300">
+                    <img src="img/car.jpeg" alt="Project 3">
+                    <div class="overlay">
+                        <h3>UI Design Project</h3>
+                        <p>Description of Project 3.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="btn btn-small" target="_blank"><i class="fas fa-link"></i> View</a>
+                            <a href="#" class="btn btn-small"><i class="fas fa-search"></i> Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more" data-aos="fade-up">
+                <a href="#" class="btn btn-outline">View More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Photography</h2>
+            <p class="section-subtitle" data-aos="fade-up">Capturing moments, creating memories</p>
+            <p data-aos="fade-up">Photography, to me, is not merely a skill; it is an enduring passion that captures the essence of life's fleeting moments. Through my lens, I strive to immortalize the beauty and stories that unfold in everyday scenes.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openModal();currentSlide(1)" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/photo_09.jpg" alt="Photo 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal();currentSlide(2)" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/photo_05.jpg" alt="Photo 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal();currentSlide(3)" data-aos="fade-up" data-aos-delay="300">
+                    <img src="img/photo_06.jpg" alt="Photo 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal();currentSlide(4)" data-aos="fade-up" data-aos-delay="400">
+                    <img src="img/photo_07.jpg" alt="Photo 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal();currentSlide(5)" data-aos="fade-up" data-aos-delay="500">
+                    <img src="img/photo_08.jpg" alt="Photo 5">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openModal();currentSlide(6)" data-aos="fade-up" data-aos-delay="600">
+                    <img src="img/photo_04.jpg" alt="Photo 6">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="img/photo_09.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="img/photo_05.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="img/photo_06.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="img/photo_07.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="img/photo_08.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="img/photo_04.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <p class="section-subtitle" data-aos="fade-up">Feel free to reach out to discuss your project or just to say hello!</p>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>alamin57@student.sust.edu</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+880 1234 567890</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/alamin-sust-cse" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://x.com/__alamin____" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/alamin._._" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/alamin.hossain.3.1416" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://discord.com/invite/DpydXVeZ" target="_blank" class="social-icon discord"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" method="POST" class="contact-form" data-aos="fade-left" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Al-Amin Hossain</h2>
+                    <p>Software Engineer & Photographer</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on my latest projects.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Al-Amin Hossain. All rights reserved.</p>
+                <div class="back-to-top" id="backToTop">
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="ah_scripts.js"></script>
+</body>
+</html>
