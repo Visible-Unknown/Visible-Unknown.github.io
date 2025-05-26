@@ -957,6 +957,7 @@ section {
     color: var(--white);
     font-size: 1.2rem;
     transition: var(--transition);
+    text-decoration: none;
 }
 
 .social-icon:hover {
